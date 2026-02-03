@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élegance - Fine Dining Restaurant</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-utensils me-2"></i>ÉLEGANCE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?w=1200&h=600&fit=crop');">
+        <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center text-white">
+            <h1 class="display-3 fw-bold mb-3">Welcome to ÉLEGANCE</h1>
+            <p class="lead mb-4">Experience Culinary Excellence in an Ambiance of Sophistication</p>
+            <div class="d-flex gap-3 flex-wrap justify-content-center">
+                <a href="contact.html" class="btn btn-gold btn-lg">Reserve a Table</a>
+                <a href="menu.html" class="btn btn-outline-light btn-lg">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Signature Dishes</h2>
+                <p class="text-muted lead">Handcrafted by our award-winning chef</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 dish-card">
+                        <img src="https://images.pexels.com/photos/6606221/pexels-photo-6606221.jpeg?w=400&h=300&fit=crop" class="card-img-top" alt="Dish">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Pan-Seared Scallops</h5>
+                            <p class="card-text text-muted">Succulent scallops with seasonal vegetables and champagne beurre blanc</p>
+                            <p class="text-gold fw-bold">$45</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 dish-card">
+                        <img src="https://images.pexels.com/photos/3624411/pexels-photo-3624411.jpeg?w=400&h=300&fit=crop" class="card-img-top" alt="Dish">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Prime Ribeye Steak</h5>
+                            <p class="card-text text-muted">Dry-aged beef with truffle mash and roasted asparagus</p>
+                            <p class="text-gold fw-bold">$55</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 dish-card">
+                        <img src="https://images.pexels.com/photos/5737450/pexels-photo-5737450.jpeg?w=400&h=300&fit=crop" class="card-img-top" alt="Dish">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Lobster Thermidor</h5>
+                            <p class="card-text text-muted">Fresh Atlantic lobster with creamy sauce and seasonal herbs</p>
+                            <p class="text-gold fw-bold">$65</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <img src="https://images.pexels.com/photos/3952035/pexels-photo-3952035.jpeg?w=500&h=400&fit=crop" alt="Restaurant" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-3">Our Story</h2>
+                    <p class="lead text-muted mb-3">Founded in 2015, ÉLEGANCE has become the destination for those seeking refined culinary experiences. Our commitment to excellence, sustainability, and innovation drives every dish that leaves our kitchen.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check text-gold me-2"></i>Michelin-Starred Chef</li>
+                        <li class="mb-2"><i class="fas fa-check text-gold me-2"></i>Locally-Sourced Ingredients</li>
+                        <li class="mb-2"><i class="fas fa-check text-gold me-2"></i>Award-Winning Wine Selection</li>
+                        <li class="mb-2"><i class="fas fa-check text-gold me-2"></i>Intimate Dining Experience</li>
+                    </ul>
+                    <a href="about.html" class="btn btn-gold">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">What Our Guests Say</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card p-4 border-start border-gold">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-gold"></i>
+                            <i class="fas fa-star text-gold"></i>
+                            <i class="fas fa-star text-gold"></i>
+                            <i class="fas fa-star text-gold"></i>
+                            <i class="fas fa-star text-gold"></i>
+                        </div>
+                        <p class="mb-3">"An absolutely exquisite dining experience. Every course was a masterpiece."</p>
+                        <p class="fw-bold">- Sarah Mitchell</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card p-4 border-start border-gold">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-gold"></i>
+                            <i class="fas fa-star text-gold"></i>
+                            <i class="fas fa-star text-gold"></i>
+                            <i class="fas fa-star text-gold"></i>
+                            <i class="fas fa-star text-gold"></i>
+                        </div>
+                        <p class="mb-3">"The ambiance, service, and food are impeccable. Our anniversary dinner was unforgettable."</p>
+                        <p class="fw-bold">- James & Emily</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card p-4 border-start border-gold">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-gold"></i>
+                            <i class="fas fa-star text-gold"></i>
+                            <i class="fas fa-star text-gold"></i>
+                            <i class="fas fa-star text-gold"></i>
+                            <i class="fas fa-star text-gold"></i>
+                        </div>
+                        <p class="mb-3">"World-class cuisine with exceptional attention to detail. A true gem!"</p>
+                        <p class="fw-bold">- Michael Chen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darker text-white py-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">ÉLEGANCE</h5>
+                    <p class="text-white-50">Experience fine dining at its finest.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-gold me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gold me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gold me-3"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Hours</h5>
+                    <p class="text-white-50">Monday - Thursday: 5:00 PM - 10:00 PM</p>
+                    <p class="text-white-50">Friday - Saturday: 5:00 PM - 11:00 PM</p>
+                    <p class="text-white-50">Sunday: Closed</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Contact</h5>
+                    <p class="text-white-50"><i class="fas fa-phone text-gold me-2"></i>(555) 123-4567</p>
+                    <p class="text-white-50"><i class="fas fa-envelope text-gold me-2"></i>info@elegance.com</p>
+                    <p class="text-white-50"><i class="fas fa-map-marker-alt text-gold me-2"></i>123 Gourmet Street, City</p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-white-50">
+                <p>&copy; 2026 ÉLEGANCE Fine Dining Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

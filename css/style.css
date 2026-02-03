@@ -1,0 +1,481 @@
+/* ========================================
+   CUSTOM STYLES FOR ÉLEGANCE RESTAURANT
+   ======================================== */
+
+:root {
+    --gold: #d4af37;
+    --dark-bg: #1a1a1a;
+    --darker-bg: #0f0f0f;
+    --light-bg: #f8f9fa;
+    --text-dark: #333;
+    --text-light: #666;
+}
+
+/* ========================================
+   GENERAL STYLES
+   ======================================== */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.text-gold {
+    color: var(--gold) !important;
+}
+
+.bg-dark {
+    background-color: var(--dark-bg) !important;
+}
+
+.bg-darker {
+    background-color: var(--darker-bg) !important;
+}
+
+.border-gold {
+    border-color: var(--gold) !important;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+
+.btn-gold {
+    background-color: var(--gold);
+    color: var(--dark-bg);
+    border: none;
+    font-weight: 600;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: #f4d64e;
+    color: var(--dark-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+}
+
+.btn-outline-light:hover {
+    background-color: transparent;
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+.hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section h1 {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    animation: slideInDown 0.8s ease;
+}
+
+.hero-section p {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    animation: slideInUp 0.8s ease;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
+
+.navbar {
+    background: linear-gradient(to bottom, rgba(26, 26, 26, 0.95), rgba(26, 26, 26, 0.9)) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: var(--gold) !important;
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--gold) !important;
+}
+
+/* ========================================
+   PAGE HEADER
+   ======================================== */
+
+.page-header {
+    background: linear-gradient(135deg, var(--dark-bg) 0%, #2a2a2a 100%);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.page-header h1 {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* ========================================
+   DISH CARDS
+   ======================================== */
+
+.dish-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.dish-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+.dish-card img {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.dish-card:hover img {
+    transform: scale(1.05);
+}
+
+/* ========================================
+   GALLERY ITEMS
+   ======================================== */
+
+.gallery-item {
+    position: relative;
+    cursor: pointer;
+    height: 300px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(212, 175, 55, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+/* ========================================
+   MENU ITEMS
+   ======================================== */
+
+.menu-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    padding-left: 10px;
+    color: var(--gold);
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item h5 {
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover h5 {
+    color: var(--gold);
+}
+
+/* ========================================
+   TESTIMONIALS
+   ======================================== */
+
+.testimonial-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+    transform: translateY(-5px);
+}
+
+/* ========================================
+   CONTACT CARDS
+   ======================================== */
+
+.contact-card {
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+/* ========================================
+   FORM STYLES
+   ======================================== */
+
+.form-control,
+.form-select {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+footer {
+    margin-top: 5rem;
+}
+
+.social-links a {
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.2);
+}
+
+/* ========================================
+   ACHIEVEMENT CARDS
+   ======================================== */
+
+.achievement-card {
+    background-color: var(--light-bg);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.achievement-card:hover {
+    background-color: var(--gold);
+    color: white;
+}
+
+.achievement-card:hover i {
+    color: var(--dark-bg) !important;
+}
+
+.achievement-card i {
+    transition: color 0.3s ease;
+}
+
+/* ========================================
+   WINE CARDS
+   ======================================== */
+
+.wine-card {
+    transition: all 0.3s ease;
+    background-color: var(--light-bg);
+}
+
+.wine-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 70vh;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .display-4 {
+        font-size: 2rem !important;
+    }
+
+    .display-5 {
+        font-size: 1.75rem !important;
+    }
+
+    .page-header {
+        padding: 60px 0;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 5px 0;
+    }
+
+    .gallery-item {
+        height: 200px;
+    }
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease;
+}
+
+/* ========================================
+   SMOOTH SCROLLING
+   ======================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ========================================
+   SCROLLBAR STYLING
+   ======================================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gold);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f4d64e;
+}
+
+/* ========================================
+   UTILITIES
+   ======================================== */
+
+.shadow-sm {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.shadow {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* ========================================
+   TRANSITIONS
+   ======================================== */
+
+* {
+    transition-property: background-color, border-color, color, box-shadow, transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+}

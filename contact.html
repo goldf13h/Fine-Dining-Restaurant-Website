@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Reservations - Élegance Fine Dining</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-utensils me-2"></i>ÉLEGANCE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-white">Contact & Reservations</h1>
+            <p class="lead text-light">We Look Forward to Welcoming You</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-md-4 text-center">
+                    <div class="contact-card p-4">
+                        <i class="fas fa-map-marker-alt fa-3x text-gold mb-3"></i>
+                        <h5 class="fw-bold mb-2">Location</h5>
+                        <p class="text-muted">123 Gourmet Street<br>Fine Dining District<br>New York, NY 10001</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="contact-card p-4">
+                        <i class="fas fa-phone fa-3x text-gold mb-3"></i>
+                        <h5 class="fw-bold mb-2">Phone</h5>
+                        <p class="text-muted">(555) 123-4567<br>Mon-Thu: 11:00 AM - 10:00 PM<br>Fri-Sat: 11:00 AM - 11:00 PM</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="contact-card p-4">
+                        <i class="fas fa-envelope fa-3x text-gold mb-3"></i>
+                        <h5 class="fw-bold mb-2">Email</h5>
+                        <p class="text-muted">info@elegance.com<br>reservations@elegance.com<br>We reply within 2 hours</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reservation Form -->
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">Make a Reservation</h2>
+                    <form id="reservationForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number *</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="date" class="form-label">Preferred Date *</label>
+                                <input type="date" class="form-control" id="date" name="date" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="time" class="form-label">Preferred Time *</label>
+                                <input type="time" class="form-control" id="time" name="time" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="guests" class="form-label">Number of Guests *</label>
+                            <select class="form-select" id="guests" name="guests" required>
+                                <option value="">Select number of guests</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6 Guests</option>
+                                <option value="7">7 Guests</option>
+                                <option value="8">8+ Guests</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="occasion" class="form-label">Special Occasion (Optional)</label>
+                            <input type="text" class="form-control" id="occasion" name="occasion" placeholder="e.g., Anniversary, Birthday">
+                        </div>
+                        <div class="mb-3">
+                            <label for="dietary" class="form-label">Dietary Restrictions</label>
+                            <textarea class="form-control" id="dietary" name="dietary" rows="2" placeholder="Please let us know of any dietary requirements"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Additional Notes</label>
+                            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Any special requests or preferences?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold btn-lg w-100">Request Reservation</button>
+                    </form>
+                </div>
+
+                <!-- Additional Information -->
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">About Our Service</h2>
+                    
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-2">Reservation Policy</h5>
+                        <p class="text-muted">We recommend reservations at least 2 weeks in advance. Walk-ins are accepted based on availability. Cancellations must be made 48 hours prior to your reservation.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-2">Dress Code</h5>
+                        <p class="text-muted">Smart casual to formal attire. Jackets are recommended for gentlemen during evening hours. We want your experience to be as comfortable as possible.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-2">Private Dining</h5>
+                        <p class="text-muted">We offer exclusive private dining experiences for special events, corporate functions, and intimate celebrations. Our team will work with you to create an unforgettable evening.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-2">Parking</h5>
+                        <p class="text-muted">Complimentary valet parking is available for all our guests. We are also conveniently located near public transportation.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-2">Hours of Operation</h5>
+                        <ul class="list-unstyled text-muted">
+                            <li><strong>Monday - Thursday:</strong> 5:00 PM - 10:00 PM</li>
+                            <li><strong>Friday - Saturday:</strong> 5:00 PM - 11:00 PM</li>
+                            <li><strong>Sunday:</strong> Closed</li>
+                            <li><strong>Holidays:</strong> Special hours apply</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-4 bg-light rounded border-start border-gold">
+                        <h5 class="fw-bold mb-2">Need Help?</h5>
+                        <p class="text-muted mb-0">Our reservations team is happy to answer any questions. Call us at <strong>(555) 123-4567</strong> or email <strong>reservations@elegance.com</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4 text-center">Visit Us</h2>
+            <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.123456789!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sFine%20Dining%20Restaurant!5e0!3m2!1sen!2sus!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darker text-white py-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">ÉLEGANCE</h5>
+                    <p class="text-white-50">Experience fine dining at its finest.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-gold me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gold me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gold me-3"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Hours</h5>
+                    <p class="text-white-50">Mon-Thu: 5:00 PM - 10:00 PM<br>Fri-Sat: 5:00 PM - 11:00 PM<br>Sun: Closed</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Contact</h5>
+                    <p class="text-white-50">(555) 123-4567<br>info@elegance.com<br>123 Gourmet Street, New York</p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-white-50">
+                <p>&copy; 2026 ÉLEGANCE Fine Dining Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
